@@ -62,12 +62,12 @@
 
       <!-- Secondary Nav -->
       <div class="flex justify-center space-x-4 pt-8 bg-opacity-100">
-        <button
+        <button id="donation-fetcher"
           class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300"
         >
           Donation
         </button>
-        <button
+        <button id="history-fetcher"
           class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300"
         >
           History
@@ -90,7 +90,7 @@
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-opacity-70">
-                <span id="total-donation">9800</span> BDT
+                <span id="total-donation-noakhali">9800</span> BDT
               </p>
             </div>
             <h3 class="text-xl font-bold leading-8">
@@ -250,7 +250,7 @@
       </section>
 
       <!-- History section start -->
-      <section id="history-container">
+      <section id="history-container" class="hidden space-y-4">
         
       </section>
     </main>
@@ -258,7 +258,12 @@
     <footer></footer>
 
     <script src="./js/utlities.js"></script>
+    <script src="./js/utilitiesFetcher.js"></script>
     <script src="./js/donateNoakhali.js"></script>
     <script src="./js/donateFeni.js"></script>
+    <script src="./js/donateQuotaMovement.JS"></script>
+    <script src="./js/fetcher.js"></script>
   </body>
 </html>
+
+

@@ -1,24 +1,26 @@
 
-const totalDonationInput = document.getElementById("total-donation");
-const donationAmountInput = document.getElementById("donation-input-noakhali");
+const totalDonationInputNoakhali = document.getElementById("total-donation-noakhali");
+const donationAmountInputNoakhali = document.getElementById("donation-input-noakhali");
 
 //insert total account balance
-const totalAccountBalanceInput = document.getElementById("total-account-balance");
+const totalAccountBalanceInputNoakhali = document.getElementById("total-account-balance");
 
 // donation balance add and calculate for "Noakhali"
 document.getElementById("donate-noakhali").addEventListener("click", function(){
     
-    const donateAmount = Number(donationAmountInput.value);
-    
+    const donateAmount = Number(donationAmountInputNoakhali.value);
+
     // addAndCalculateDonation(id1, id2); 
     // id1 = donation amount id
     // id2 = amount input id
-    const result = addAndCalculateDonation("total-donation-total-donation-noakhali","donation-input-noakhali");
-    totalDonationInput.innerText = result;
+    const resultNoakhali = addAndCalculateDonation("total-donation-noakhali","donation-input-noakhali");
+
+    if(result !== null && result != 0 && result > 0){
+      totalDonationInputNoakhali.innerText = resultNoakhali;
 
     //total account balance
     const totalAccountResult = totalAccountBalanceUpdate("donation-input-noakhali");
-    totalAccountBalanceInput.innerText = totalAccountResult;
+    totalAccountBalanceInputNoakhali.innerText = totalAccountResult;
 
     const historyStatus = `
         <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
@@ -29,6 +31,9 @@ document.getElementById("donate-noakhali").addEventListener("click", function(){
 
     const history = document.getElementById("history-container");
     history.innerHTML += historyStatus;
+
+    }
+    
 
     // Add modal 
 

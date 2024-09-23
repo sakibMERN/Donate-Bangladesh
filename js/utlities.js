@@ -1,6 +1,6 @@
 
 //insert total account balance
-const totalAccountBalanceInput1 = document.getElementById("total-account-balance");
+const totalAccountBalanceInput = document.getElementById("total-account-balance");
 
 //======>>>>>>Common function for donation
 function addAndCalculateDonation(id1, id2){
@@ -9,8 +9,10 @@ function addAndCalculateDonation(id1, id2){
     
     // convert string to number
     const totalDonationNumber = Number(totalDonationInput.innerText);
+    console.log(totalDonationNumber);
     const donationAmountNumber = Number(donationAmountInput.value);
-    const totalAccountBalanceNumber = Number(totalAccountBalanceInput1.innerText);
+    console.log(donationAmountNumber);
+    const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
 
     //validate the donation input 
     console.log("The amount is: ",donationAmountNumber);
@@ -28,7 +30,7 @@ function addAndCalculateDonation(id1, id2){
         else{
             //add with total donation
             const totalDonation = totalDonationNumber + donationAmountNumber;
-            console.log(totalDonation);
+            console.log("Total donation is:",totalDonation);
             return totalDonation;
 
         }
@@ -45,7 +47,7 @@ function totalAccountBalanceUpdate(id){
 
     // convert string to number
     const donationAmountNumber = Number(donationAmountInput.value);
-    const totalAccountBalanceNumber = Number(totalAccountBalanceInput1.innerText);
+    const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
     console.log("donation amount: ",donationAmountNumber);
     console.log("total account balance number:", totalAccountBalanceNumber);
 
