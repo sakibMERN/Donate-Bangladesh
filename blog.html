@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- import google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Insert DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              arrow: "#ABEF5F",
+            },
+            fontFamily: {
+              lexend: ["lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0 bg-[#F9F7F3]">
+      <!-- Nav bar start here -->
+      <nav class="bg-[#F9F7F3]">
+        <div class="navbar lg:w-4/5 lg:mx-auto py-6">
+          <div class="navbar-start">
+            <button id="btn-blog" class="btn px-8 bg-[#B4F461] text-xl font-semibold">
+              <a href="index.html">Home</a>
+            </button>
+          </div>
+          <div class="navbar-center space-x-4">
+            <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
+            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end space-x-3">
+            <img src="./assets/coin.png" alt="coin" />
+            <p class="text-xl text-[#111111] text-opacity-70">
+              <span id="total-account-balance2">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <main>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+
+    </footer>
+    
+    
+    
+    
+    <script src="./js/donateNoakhali.js"></script>
+    <script src="./js/donateFeni.js"></script>
+    <script src="./js/donateQuotaMovement.JS"></script>
+    
+  </body>
+</html>

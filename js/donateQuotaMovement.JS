@@ -9,7 +9,7 @@ const totalAccountBalanceInputQuota = document.getElementById("total-account-bal
 const addModalQuota = document.getElementById("greetings-modal");
 
 // donation balance add and calculate for "Noakhali"
-document.getElementById("donate-quotaMovement").addEventListener("click", function(){
+document.getElementById("donate-quotaMovement").addEventListener("click", function(event){
     
     const donateAmount = Number(donationAmountInputQuota.value);
     
@@ -41,6 +41,7 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
       
 
     }
+    event.stopPropagation()
    
 
     

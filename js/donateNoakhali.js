@@ -9,7 +9,7 @@ const totalAccountBalanceInputNoakhali = document.getElementById("total-account-
 const addModalNoakhali = document.getElementById("greetings-modal");
 
 // donation balance add and calculate for "Noakhali"
-document.getElementById("donate-noakhali").addEventListener("click", function(){
+document.getElementById("donate-noakhali").addEventListener("click", function(event){
     
     const donateAmount = Number(donationAmountInputNoakhali.value);
 
@@ -44,7 +44,7 @@ document.getElementById("donate-noakhali").addEventListener("click", function(){
     }
     
 
-    // Add modal 
+   event.stopPropagation();
 
 
     
