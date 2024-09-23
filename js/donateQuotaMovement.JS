@@ -5,6 +5,9 @@ const donationAmountInputQuota = document.getElementById("donation-input-quotaMo
 //insert total account balance
 const totalAccountBalanceInputQuota = document.getElementById("total-account-balance");
 
+//Insert Modal
+const addModalQuota = document.getElementById("greetings-modal");
+
 // donation balance add and calculate for "Noakhali"
 document.getElementById("donate-quotaMovement").addEventListener("click", function(){
     
@@ -32,8 +35,8 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
       const history = document.getElementById("history-container");
       history.innerHTML += historyStatus;
   
-      // Add modal 
-  
+      // implement modal 
+      addModalQuota.showModal();
   
       
 

@@ -5,6 +5,9 @@ const donationAmountInputFeni = document.getElementById("donation-input-feni");
 //insert total account balance
 const totalAccountBalanceInputFeni = document.getElementById("total-account-balance");
 
+//insert modal
+const addModalFeni = document.getElementById("greetings-modal")
+
 // donation balance add and calculate for "Noakhali"
 document.getElementById("donate-feni").addEventListener("click", function(){
     
@@ -32,7 +35,8 @@ document.getElementById("donate-feni").addEventListener("click", function(){
       const history = document.getElementById("history-container");
       history.innerHTML += historyStatus;
   
-      // Add modal 
+      // implement modal
+      addModalFeni.showModal(); 
   
   
     }

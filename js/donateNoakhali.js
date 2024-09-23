@@ -5,6 +5,9 @@ const donationAmountInputNoakhali = document.getElementById("donation-input-noak
 //insert total account balance
 const totalAccountBalanceInputNoakhali = document.getElementById("total-account-balance");
 
+//insert modal
+const addModalNoakhali = document.getElementById("greetings-modal");
+
 // donation balance add and calculate for "Noakhali"
 document.getElementById("donate-noakhali").addEventListener("click", function(){
     
@@ -15,12 +18,15 @@ document.getElementById("donate-noakhali").addEventListener("click", function(){
     // id2 = amount input id
     const resultNoakhali = addAndCalculateDonation("total-donation-noakhali","donation-input-noakhali");
 
-    if(result !== null && result != 0 && result > 0){
+    if(resultNoakhali !== null && resultNoakhali != 0 && resultNoakhali > 0){
       totalDonationInputNoakhali.innerText = resultNoakhali;
 
     //total account balance
     const totalAccountResult = totalAccountBalanceUpdate("donation-input-noakhali");
     totalAccountBalanceInputNoakhali.innerText = totalAccountResult;
+
+    //Add Modal
+    
 
     const historyStatus = `
         <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
@@ -31,6 +37,9 @@ document.getElementById("donate-noakhali").addEventListener("click", function(){
 
     const history = document.getElementById("history-container");
     history.innerHTML += historyStatus;
+
+    //implement modal
+    addModalNoakhali.showModal();
 
     }
     
