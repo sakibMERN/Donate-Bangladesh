@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- import google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Insert DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              arrow: "#ABEF5F",
+            },
+            fontFamily: {
+              lexend: ["lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0">
+      <!-- Nav bar start here -->
+      <nav class="bg-[#F9F7F3] pb-10">
+        <div class="navbar lg:w-4/5 lg:mx-auto  py-6">
+          <div class="navbar-start">
+            <button class="btn  px-8 bg-[#B4F461] text-xl font-semibold">Blog</button>
+          </div>
+          <div class="navbar-center space-x-4">
+            <img class="w-12 h-12" src="./assets/logo.png" alt="logo">
+            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end space-x-3">
+            <img src="./assets/coin.png" alt="coin">
+            <p class="text-xl text-[#111111] text-opacity-70">5500 BDT</p>
+          </div>
+        </div>
+        
+      </nav>
+
+      <!-- Secondary Nav -->
+      <div class="flex justify-center space-x-4 pt-8 bg-opacity-100">
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300 ">Donation</button>
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300">History</button>
+      </div>
+      <div class="divider"></div>
+    </header>
+    <main class="lg:w-4/5 lg:mx-auto mt-12">
+      <!-- Donation section start -->
+      <section id="donation-container">
+        <!-- Card-1 -->
+         <div class="flex  items-center justify-between p-8 border border-gray-200 rounded-2xl">
+          <img src="./assets/noakhali.png" alt="flooded area">
+
+          <div class="lg:w-1/2 space-y-4">
+            <div class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-32 border-none rounded-lg box-border">
+              <img src="./assets/coin.png" alt="coin">
+              <p class="text-opacity-70">0 BDT</p>
+            </div>
+            <h3 class="text-xl font-bold leading-8">Donate for Flood at Noakhali, Bangladesh</h3>
+            <p class="font-light text-opacity-70"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered ml-0 w-full" />
+            <button class="btn btn-block text-xl font-semibold bg-[#B4F461]">Donate Now</button>
+
+          </div>
+
+         </div>
+
+      </section>
+
+      <!-- History section start -->
+      <section id="history-container">
+
+
+      </section>
+    </main>
+    <!-- Footer section start -->
+     <footer>
+
+     </footer>
+
+  </body>
+</html>
