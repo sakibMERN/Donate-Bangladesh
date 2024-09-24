@@ -38,7 +38,7 @@ document.getElementById("donate-feni").addEventListener("click", function(event)
       const historyStatus = `
           <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
             <h4 class="text-xl font-bold">${donateAmount} Taka is Donate for Flood Relief in Feni,Bangladesh</h4>
-            <p class="text-white text-[16px] bg-slate-800 leading-7 font-light text-opacity-80 rounded-lg pl-4">${Date()}</p>
+            <p class="text-white text-[16px] bg-slate-400 leading-7 font-light  rounded-lg pl-4">${Date()}</p>
           </div>
       `
       /**Using common function */

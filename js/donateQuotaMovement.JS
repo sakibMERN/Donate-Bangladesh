@@ -32,7 +32,7 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
       const historyStatus = `
           <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
             <h4 class="text-xl font-bold ">${donateAmount} Taka is Aid for Injured in the Quota Movement</h4>
-            <p class="text-white text-[16px] bg-slate-800 leading-7 font-light text-opacity-80 rounded-lg pl-4">${Date()}</p>
+            <p class="text-white text-[16px] bg-slate-400 leading-7 font-light  rounded-lg pl-4">${Date()}</p>
           </div>
       `
       /**Using common function */

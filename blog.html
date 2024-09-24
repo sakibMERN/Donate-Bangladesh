@@ -44,128 +44,128 @@
     </script>
   </head>
   <body class="font-lexend">
-    <header class="sticky top-0 bg-[#F9F7F3]">
+    <header class="sticky top-0 z-50 ">
       <!-- Nav bar start here -->
-      <nav class="bg-[#F9F7F3]">
-        <div class="navbar lg:w-4/5 lg:mx-auto py-6">
-          <div class="navbar-start">
-            <button
-              id="btn-blog"
-              class="btn px-8 bg-[#B4F461] text-xl font-semibold"
-            >
-              <a href="index.html">Home</a>
-            </button>
-          </div>
-          <div class="navbar-center space-x-4">
-            <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
-            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-          </div>
-          <div class="navbar-end space-x-3">
-            <img src="./assets/coin.png" alt="coin" />
-            <p class="text-xl text-[#111111] text-opacity-70">
-              <span id="total-account-balance-blog" class="total">10500</span>
-              BDT
-            </p>
+      <nav class=" bg-transparent">
+        <div  class="bg-slate-950 bg-opacity-70 backdrop-blur-sm pb-10">
+          <div class="navbar lg:w-4/5 lg:mx-auto py-10">
+            <div class="navbar-start">
+              <button id="btn-home" class="btn px-8 bg-[#B4F461] text-xl font-semibold">
+                <a href="index.html">Home</a>
+              </button>
+            </div>
+            <div class="navbar-center space-x-4">
+              <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
+              <h1 class="hidden lg:block text-2xl text-white font-semibold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end space-x-3">
+              <img src="./assets/coin.png" alt="coin" />
+              <p class="text-xl text-white text-opacity-80">
+                <span id="total-account-balance" class="total">10500</span> BDT
+              </p>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <!-- Main section -->
-    <main class="lg:w-4/5 lg:mx-auto mt-12 space-y-8 lg:p-5">
-      <h1 class="text-5xl font-bold">
-        Important FAQ<i class="fa-solid fa-question ml-3 text-7xl text-red-600"></i>
-      </h1>
-
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          What is the Document Object Model (DOM)?
+    <main >
+      <section class="lg:w-4/5 lg:mx-auto  space-y-10 pt-20 p-4 lg:p-5 order-1">
+        <h1 class="text-4xl lg:text-5xl font-bold">
+          Important FAQ<i class="fa-solid fa-question ml-3 text-5xl lg:text-7xl text-red-600"></i>
+        </h1>
+  
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content bg-gray-200">
+            <p>
+              The DOM is the bridge between web pages (HTML/CSS) and programming
+              languages like JavaScript. It allows you to access and manipulate
+              the content, structure, and styles of a webpage dynamically. The
+              browser turns your HTML code into a structured representation called
+              the DOM, which you can modify using JavaScript to create interactive
+              and dynamic websites.
+            </p>
+          </div>
         </div>
-        <div class="collapse-content bg-gray-200">
-          <p>
-            The DOM is the bridge between web pages (HTML/CSS) and programming
-            languages like JavaScript. It allows you to access and manipulate
-            the content, structure, and styles of a webpage dynamically. The
-            browser turns your HTML code into a structured representation called
-            the DOM, which you can modify using JavaScript to create interactive
-            and dynamic websites.
-          </p>
-        </div>
-      </div>
-
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          How do you select an element from the DOM?
-        </div>
-        <div class="collapse-content bg-gray-200">
-          <p>
-            <pre>
-            I can select an element from the DOM on multiple way. 
-              1. getElementById() 
-              2. getElementsByClassName() 
-              3. getElementsByTagName() 
-              4. querySelector() 
-              5. querySelectorAll()
-          </pre>
-          </p>
-        </div>
-      </div>
-
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          What is event delegation in the context of the DOM and why is it
-          useful?
-        </div>
-        <div class="collapse-content bg-gray-200">
-          <p>
-            
-            When you want to do something on many items in your web page, you
-            usually add a "listener" to each item. But if you have a lot of
-            items, adding a listener to each one can slow things down. Event
-            delegation is a clever way to solve this problem by adding just one
-            listener to a "parent" element instead of to each "child" item.
-          
-          </p>
-        </div>
-      </div>
-
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          How do you manipulate an element's attributes and styles using the
-          DOM?
-        </div>
-        <div class="collapse-content bg-gray-200">
-          <p>
-            <pre>
-            I can manipulate an element's attributes and styles in the DOM
-            like this:
-             Attributes: 
-                setAttribute('attr', 'value'): Change or add
-                an attribute. 
-                getAttribute('attr'): Get an attribute's value.
-                removeAttribute('attr'): Remove an attribute. 
-             Styles:
-                element.style.property = 'value': Change a specific CSS property. 
-             Classes:
-                element.classList.add('className'): Add a class.
-                element.classList.remove('className'): Remove a class.
-                element.classList.toggle('className'): Toggle a class on/off.
-             Content: 
-                element.innerHTML = 'HTML content': Change HTML inside theelement. 
-                element.textContent = 'Text content': Change only text
-            content.
+  
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content bg-gray-200">
+            <p>
+              
+              I can select an element from the DOM on multiple way. <br>
+                1. getElementById() <br>
+                2. getElementsByClassName() <br>
+                3. getElementsByTagName() <br>
+                4. querySelector() <br>
+                5. querySelectorAll()
             </pre>
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
+  
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM and why is it
+            useful?
+          </div>
+          <div class="collapse-content bg-gray-200">
+            <p>
+              
+              When you want to do something on many items in your web page, you
+              usually add a "listener" to each item. But if you have a lot of
+              items, adding a listener to each one can slow things down. Event
+              delegation is a clever way to solve this problem by adding just one
+              listener to a "parent" element instead of to each "child" item.
+            
+            </p>
+          </div>
+        </div>
+  
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content bg-gray-200">
+            <p>
+              
+              I can manipulate an element's attributes and styles in the DOM
+              like this: <br>
+               Attributes: <br>
+                  - setAttribute('attr', 'value'): Change or add <br>
+                  - an attribute. <br>
+                  - getAttribute('attr'): Get an attribute's value. <br>
+                  - removeAttribute('attr'): Remove an attribute. <br><br>
+               Styles: <br>
+                  - element.style.property = 'value': Change a specific CSS property. <br><br>
+               Classes: <br>
+                  - element.classList.add('className'): Add a class. <br>
+                  - element.classList.remove('className'): Remove a class. <br>
+                  - element.classList.toggle('className'): Toggle a class on/off. <br><br>
+               Content: <br>
+                  - element.innerHTML = 'HTML content': Change HTML inside      theelement. <br>
+                  - element.textContent = 'Text content': Change only text
+                  content. <br>
+              
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer section -->
     <footer>
-      
+
     </footer>
   </body>
 </html>

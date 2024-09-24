@@ -41,36 +41,36 @@
     <header class="sticky top-0">
       <!-- Nav bar start here -->
       <nav class="">
-        <div class=" bg-[#F9F7F3]  bg-opacity-70 backdrop:blur-3xl pb-10">
-          <div class="navbar lg:w-4/5 lg:mx-auto py-6">
+        <div class=" bg-slate-950  bg-opacity-70 backdrop-blur-sm pb-10">
+          <div class="navbar lg:w-4/5 lg:mx-auto py-10">
             <div class="navbar-start">
               <button id="btn-home" class="btn px-8 bg-[#B4F461] text-xl font-semibold">
-                <a id="btn-routing" href="blog.html">Blog</a>
+                <a href="blog.html">Blog</a>
               </button>
             </div>
             <div class="navbar-center space-x-4">
               <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
-              <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+              <h1 class="hidden lg:block text-2xl text-white font-semibold">Donate Bangladesh</h1>
             </div>
             <div class="navbar-end space-x-3">
               <img src="./assets/coin.png" alt="coin" />
-              <p class="text-xl text-[#111111] text-opacity-70">
+              <p class="text-xl text-white text-opacity-80">
                 <span id="total-account-balance" class="total">10500</span> BDT
               </p>
             </div>
           </div>
         </div>
         <!-- Secondary Nav -->
-      <div class="flex justify-center bg-white space-x-4 py-8  bg-opacity-70 backdrop:blur-3xl">
+      <div class="flex justify-center bg-white space-x-4 py-8  bg-opacity-70 backdrop-blur-sm">
         <button
           id="donation-fetcher"
-          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300 bg-[#B4F461]"
+          class="btn btn-xs btn-md lg:btn-lg border-1 border-gray-300 px-8 py-4 bg-[#B4F461]"
         >
           Donation
         </button>
         <button
           id="history-fetcher"
-          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300"
+          class="btn btn-xs btn-md lg:btn-lg border-1  px-8 py-4 border-gray-300"
         >
           History
         </button>
@@ -80,12 +80,12 @@
 
       
     </header>
-    <main class="lg:w-4/5 lg:mx-auto mt-12">
+    <main class="lg:w-4/5 lg:mx-auto mt-12 p-4 lg:p-0">
       <!-- Donation section start -->
       <section id="donation-container" class="pb-12 space-y-8 " >
         <!-- Card-1 -->
         <div
-          class="flex items-center justify-between p-8 border border-gray-200 rounded-2xl"
+          class="flex flex-col lg:flex-row items-center justify-between p-8 border border-gray-200 rounded-2xl space-y-5"
         >
           <img src="./assets/noakhali.png" alt="flooded area" />
 
@@ -126,7 +126,7 @@
 
         <!-- Card-2 -->
         <div
-          class="flex items-center justify-between p-8 border border-gray-200 rounded-2xl"
+          class="flex flex-col lg:flex-row items-center justify-between p-8 border border-gray-200 rounded-2xl"
         >
           <img src="./assets/feni.png" alt="flooded area" />
 
@@ -162,7 +162,7 @@
 
         <!-- Card-3 -->
         <div
-          class="flex items-center justify-between p-8 border border-gray-200 rounded-2xl"
+          class="flex flex-col lg:flex-row items-center justify-between p-8 border border-gray-200 rounded-2xl"
         >
           <img src="./assets/quota-protest.png" alt="flooded area" />
 
@@ -223,7 +223,7 @@
 
         </div>
         <div>
-          
+
         </div>
       </section>
     </footer>
