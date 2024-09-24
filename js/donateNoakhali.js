@@ -22,7 +22,7 @@ document.getElementById("donate-noakhali").addEventListener("click", function(ev
     if(resultNoakhali !== null && resultNoakhali != 0 && resultNoakhali > 0){
       totalDonationInputNoakhali.innerText = resultNoakhali;
 
-    //total account balance
+    //Common function for total account balance calculation
     const totalAccountResult = totalAccountBalanceCalculate("donation-input-noakhali");
     // totalAccountBalanceInputNoakhali.innerText = totalAccountResult;
 

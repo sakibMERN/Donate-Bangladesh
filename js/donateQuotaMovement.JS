@@ -22,7 +22,7 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
     if(result !== null && result != 0 && result > 0){
       totalDonationInputQuota.innerText = result;
 
-      //total account balance
+      //Common function for total account balance calculation
       const totalAccountResult = totalAccountBalanceCalculate("donation-input-quotaMovement");
       // totalAccountBalanceInputQuota.innerText = totalAccountResult;
 
