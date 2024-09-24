@@ -15,7 +15,6 @@ function addAndCalculateDonation(id1, id2){
     const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
 
     //validate the donation input 
-    // console.log("The amount is: ",donationAmountNumber);
 
     if(!isNaN(donationAmountNumber) && donationAmountInput !== ""){
         if( donationAmountNumber === 0){
@@ -48,17 +47,15 @@ function totalAccountBalanceCalculate(id){
     // convert string to number
     const donationAmountNumber = Number(donationAmountInput.value);
     const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
-    // console.log("donation amount: ",donationAmountNumber);
-    // console.log("total account balance number:", totalAccountBalanceNumber);
+
 
     if(totalAccountBalanceNumber >= donationAmountNumber){
         // Adjust total account balance
         const updateBalance = totalAccountBalanceNumber - donationAmountNumber;
-        // console.log(updateBalance);
         return updateBalance;
     }else{
         return alert("Insufficient Balance");
     }
     
-}
+};
 

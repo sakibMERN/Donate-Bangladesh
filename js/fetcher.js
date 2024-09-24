@@ -9,4 +9,4 @@ document.getElementById("donation-fetcher").addEventListener("click", function()
 document.getElementById("history-fetcher").addEventListener("click", function(){
 
     activeFetcher("history-fetcher");
-})
+});
