@@ -9,13 +9,13 @@ function addAndCalculateDonation(id1, id2){
     
     // convert string to number
     const totalDonationNumber = Number(totalDonationInput.innerText);
-    console.log(totalDonationNumber);
+    // console.log(totalDonationNumber);
     const donationAmountNumber = Number(donationAmountInput.value);
-    console.log(donationAmountNumber);
+    // console.log(donationAmountNumber);
     const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
 
     //validate the donation input 
-    console.log("The amount is: ",donationAmountNumber);
+    // console.log("The amount is: ",donationAmountNumber);
 
     if(!isNaN(donationAmountNumber) && donationAmountInput !== ""){
         if( donationAmountNumber === 0){
@@ -30,7 +30,7 @@ function addAndCalculateDonation(id1, id2){
         else{
             //add with total donation
             const totalDonation = totalDonationNumber + donationAmountNumber;
-            console.log("Total donation is:",totalDonation);
+            // console.log("Total donation is:",totalDonation);
             return totalDonation;
 
         }
@@ -40,24 +40,35 @@ function addAndCalculateDonation(id1, id2){
     }
 };
 
-//======>>>>>>Common function for Total account balance
+//======>>>>>>Common function for Total account balance calculation
 
-function totalAccountBalanceUpdate(id){
+function totalAccountBalanceCalculate(id){
     const donationAmountInput = document.getElementById(id);
 
     // convert string to number
     const donationAmountNumber = Number(donationAmountInput.value);
     const totalAccountBalanceNumber = Number(totalAccountBalanceInput.innerText);
-    console.log("donation amount: ",donationAmountNumber);
-    console.log("total account balance number:", totalAccountBalanceNumber);
+    // console.log("donation amount: ",donationAmountNumber);
+    // console.log("total account balance number:", totalAccountBalanceNumber);
 
     if(totalAccountBalanceNumber >= donationAmountNumber){
         // Adjust total account balance
         const updateBalance = totalAccountBalanceNumber - donationAmountNumber;
-        console.log(updateBalance);
+        // console.log(updateBalance);
         return updateBalance;
     }else{
         return alert("Insufficient Balance");
     }
     
+}
+
+
+//===========>>>>> Common function for total account balance update
+
+function totalAccountBalanceUpdate(value){
+    const remainingBalances = document.getElementsByClassName("total");
+      for(let remainingBalance of remainingBalances){
+        remainingBalance.innerText = value;
+        remainingBalance++;
+      }
 }

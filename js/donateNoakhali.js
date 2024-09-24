@@ -13,6 +13,7 @@ document.getElementById("donate-noakhali").addEventListener("click", function(ev
     
     const donateAmount = Number(donationAmountInputNoakhali.value);
 
+    /**Using common function */
     // addAndCalculateDonation(id1, id2); 
     // id1 = donation amount id
     // id2 = amount input id
@@ -22,8 +23,18 @@ document.getElementById("donate-noakhali").addEventListener("click", function(ev
       totalDonationInputNoakhali.innerText = resultNoakhali;
 
     //total account balance
-    const totalAccountResult = totalAccountBalanceUpdate("donation-input-noakhali");
-    totalAccountBalanceInputNoakhali.innerText = totalAccountResult;
+    const totalAccountResult = totalAccountBalanceCalculate("donation-input-noakhali");
+    // totalAccountBalanceInputNoakhali.innerText = totalAccountResult;
+
+
+    //Common function for total account balance update
+    totalAccountBalanceUpdate(totalAccountResult);
+
+    // const remainingBalances = document.getElementsByClassName("total");
+    //   for(let remainingBalance of remainingBalances){
+    //     remainingBalance.innerText = totalAccountResult;
+    //     remainingBalance++;
+    //   }
 
     //Add Modal
     
@@ -34,7 +45,7 @@ document.getElementById("donate-noakhali").addEventListener("click", function(ev
           <p class="text-[16px] leading-7 font-light text-opacity-60">${Date()}</p>
         </div>
     `
-
+    /**Using common function */
     const history = document.getElementById("history-container");
     history.innerHTML += historyStatus;
 

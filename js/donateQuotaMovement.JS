@@ -13,6 +13,7 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
     
     const donateAmount = Number(donationAmountInputQuota.value);
     
+    /**Using common function */
     // addAndCalculateDonation(id1, id2); 
     // id1 = donation amount id
     // id2 = amount input id
@@ -22,8 +23,17 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
       totalDonationInputQuota.innerText = result;
 
       //total account balance
-      const totalAccountResult = totalAccountBalanceUpdate("donation-input-quotaMovement");
-      totalAccountBalanceInputQuota.innerText = totalAccountResult;
+      const totalAccountResult = totalAccountBalanceCalculate("donation-input-quotaMovement");
+      // totalAccountBalanceInputQuota.innerText = totalAccountResult;
+
+      //Common function for total account balance update
+      totalAccountBalanceUpdate(totalAccountResult);
+
+      // const remainingBalances = document.getElementsByClassName("total");
+      // for(let remainingBalance of remainingBalances){
+      //   remainingBalance.innerText = totalAccountResult;
+      //   remainingBalance++;
+      // }
   
       const historyStatus = `
           <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
@@ -31,7 +41,7 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
             <p class="text-[16px] leading-7 font-light text-opacity-60">${Date()}</p>
           </div>
       `
-  
+      /**Using common function */
       const history = document.getElementById("history-container");
       history.innerHTML += historyStatus;
   
