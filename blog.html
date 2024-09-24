@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh</title>
 
@@ -63,7 +63,8 @@
           <div class="navbar-end space-x-3">
             <img src="./assets/coin.png" alt="coin" />
             <p class="text-xl text-[#111111] text-opacity-70">
-              <span id="total-account-balance-blog" class="total">10500</span> BDT
+              <span id="total-account-balance-blog" class="total">10500</span>
+              BDT
             </p>
           </div>
         </div>
@@ -72,7 +73,7 @@
     <!-- Main section -->
     <main class="lg:w-4/5 lg:mx-auto mt-12 space-y-8 lg:p-5">
       <h1 class="text-5xl font-bold">
-        Important FAQ<i class="fa-solid fa-question ml-3 text-7xl"></i>
+        Important FAQ<i class="fa-solid fa-question ml-3 text-7xl text-red-600"></i>
       </h1>
 
       <div class="collapse collapse-arrow bg-base-200">
@@ -80,8 +81,15 @@
         <div class="collapse-title text-xl font-medium">
           What is the Document Object Model (DOM)?
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse-content bg-gray-200">
+          <p>
+            The DOM is the bridge between web pages (HTML/CSS) and programming
+            languages like JavaScript. It allows you to access and manipulate
+            the content, structure, and styles of a webpage dynamically. The
+            browser turns your HTML code into a structured representation called
+            the DOM, which you can modify using JavaScript to create interactive
+            and dynamic websites.
+          </p>
         </div>
       </div>
 
@@ -90,38 +98,74 @@
         <div class="collapse-title text-xl font-medium">
           How do you select an element from the DOM?
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-        F
-      </div>
-
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          What is event delegation in the context of the DOM and why is it useful?
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse-content bg-gray-200">
+          <p>
+            <pre>
+            I can select an element from the DOM on multiple way. 
+              1. getElementById() 
+              2. getElementsByClassName() 
+              3. getElementsByTagName() 
+              4. querySelector() 
+              5. querySelectorAll()
+          </pre>
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          How do you manipulate an element's attributes and styles using the DOM?
+          What is event delegation in the context of the DOM and why is it
+          useful?
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse-content bg-gray-200">
+          <p>
+            
+            When you want to do something on many items in your web page, you
+            usually add a "listener" to each item. But if you have a lot of
+            items, adding a listener to each one can slow things down. Event
+            delegation is a clever way to solve this problem by adding just one
+            listener to a "parent" element instead of to each "child" item.
+          
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styles using the
+          DOM?
+        </div>
+        <div class="collapse-content bg-gray-200">
+          <p>
+            <pre>
+            I can manipulate an element's attributes and styles in the DOM
+            like this:
+             Attributes: 
+                setAttribute('attr', 'value'): Change or add
+                an attribute. 
+                getAttribute('attr'): Get an attribute's value.
+                removeAttribute('attr'): Remove an attribute. 
+             Styles:
+                element.style.property = 'value': Change a specific CSS property. 
+             Classes:
+                element.classList.add('className'): Add a class.
+                element.classList.remove('className'): Remove a class.
+                element.classList.toggle('className'): Toggle a class on/off.
+             Content: 
+                element.innerHTML = 'HTML content': Change HTML inside theelement. 
+                element.textContent = 'Text content': Change only text
+            content.
+            </pre>
+          </p>
         </div>
       </div>
     </main>
 
     <!-- Footer section -->
-    <footer></footer>
-    <script src="./js/utlities.js"></script>
-    <script src="./js/donateNoakhali.js"></script>
-    <script src="./js/donateFeni.js"></script>
-    <script src="./js/donateQuotaMovement.JS"></script>
+    <footer>
+      
+    </footer>
   </body>
 </html>

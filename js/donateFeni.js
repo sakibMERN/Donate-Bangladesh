@@ -27,28 +27,27 @@ document.getElementById("donate-feni").addEventListener("click", function(event)
   
       //Common function for total account balance calculation
       const totalAccountResult = totalAccountBalanceCalculate("donation-input-feni");
-      // totalAccountBalanceInputFeni.innerText = totalAccountResult;
       
       //Common function for total account balance update
-      totalAccountBalanceUpdate(totalAccountResult);
+      totalAccountBalanceInputFeni.innerText = totalAccountResult;
+
+
       
-      // const remainingBalances = document.getElementsByClassName("total");
-      // for(let remainingBalance of remainingBalances){
-      //   remainingBalance.innerText = totalAccountResult;
-      //   remainingBalance++;
-      // }
   
       
       const historyStatus = `
           <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
-            <h4 class="text-xl font-bold ">${donateAmount} Taka is Donate for Flood Relief in Feni,Bangladesh</h4>
-            <p class="text-[16px] leading-7 font-light text-opacity-60">${Date()}</p>
+            <h4 class="text-xl font-bold">${donateAmount} Taka is Donate for Flood Relief in Feni,Bangladesh</h4>
+            <p class="text-white text-[16px] bg-slate-800 leading-7 font-light text-opacity-80 rounded-lg pl-4">${Date()}</p>
           </div>
       `
       /**Using common function */
       const history = document.getElementById("history-container");
       history.innerHTML += historyStatus;
   
+   //Clear the input field
+   document.getElementById("donation-input-feni").value = "";
+
       // implement modal
       addModalFeni.showModal(); 
   

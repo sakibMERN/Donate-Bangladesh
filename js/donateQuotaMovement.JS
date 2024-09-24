@@ -24,27 +24,24 @@ document.getElementById("donate-quotaMovement").addEventListener("click", functi
 
       //Common function for total account balance calculation
       const totalAccountResult = totalAccountBalanceCalculate("donation-input-quotaMovement");
-      // totalAccountBalanceInputQuota.innerText = totalAccountResult;
-
+      
       //Common function for total account balance update
-      totalAccountBalanceUpdate(totalAccountResult);
-
-      // const remainingBalances = document.getElementsByClassName("total");
-      // for(let remainingBalance of remainingBalances){
-      //   remainingBalance.innerText = totalAccountResult;
-      //   remainingBalance++;
-      // }
+      totalAccountBalanceInputQuota.innerText = totalAccountResult;
+      
   
       const historyStatus = `
           <div class="p-8 space-y-4 border border-gray-200 rounded-2xl">
             <h4 class="text-xl font-bold ">${donateAmount} Taka is Aid for Injured in the Quota Movement</h4>
-            <p class="text-[16px] leading-7 font-light text-opacity-60">${Date()}</p>
+            <p class="text-white text-[16px] bg-slate-800 leading-7 font-light text-opacity-80 rounded-lg pl-4">${Date()}</p>
           </div>
       `
       /**Using common function */
       const history = document.getElementById("history-container");
       history.innerHTML += historyStatus;
   
+      //Clear the input field
+      document.getElementById("donation-input-quotaMovement").value = "";
+
       // implement modal 
       addModalQuota.showModal();
   

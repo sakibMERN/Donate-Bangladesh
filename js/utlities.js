@@ -62,13 +62,3 @@ function totalAccountBalanceCalculate(id){
     
 }
 
-
-//===========>>>>> Common function for total account balance update
-
-function totalAccountBalanceUpdate(value){
-    const remainingBalances = document.getElementsByClassName("total");
-      for(let remainingBalance of remainingBalances){
-        remainingBalance.innerText = value;
-        remainingBalance++;
-      }
-}

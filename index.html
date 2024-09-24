@@ -37,31 +37,31 @@
       };
     </script>
   </head>
-  <body class="font-lexend">
-    <header class="sticky top-0 bg-[#F9F7F3]">
+  <body class="font-lexend box-border">
+    <header class="sticky top-0">
       <!-- Nav bar start here -->
-      <nav class="bg-[#F9F7F3]">
-        <div class="navbar lg:w-4/5 lg:mx-auto py-6">
-          <div class="navbar-start">
-            <button id="btn-home" class="btn px-8 bg-[#B4F461] text-xl font-semibold">
-              <a href="blog.html">Blog</a>
-            </button>
-          </div>
-          <div class="navbar-center space-x-4">
-            <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
-            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-          </div>
-          <div class="navbar-end space-x-3">
-            <img src="./assets/coin.png" alt="coin" />
-            <p class="text-xl text-[#111111] text-opacity-70">
-              <span id="total-account-balance" class="total">10500</span> BDT
-            </p>
+      <nav class="">
+        <div class=" bg-[#F9F7F3]  bg-opacity-70 backdrop:blur-3xl pb-10">
+          <div class="navbar lg:w-4/5 lg:mx-auto py-6">
+            <div class="navbar-start">
+              <button id="btn-home" class="btn px-8 bg-[#B4F461] text-xl font-semibold">
+                <a id="btn-routing" href="blog.html">Blog</a>
+              </button>
+            </div>
+            <div class="navbar-center space-x-4">
+              <img class="w-12 h-12" src="./assets/logo.png" alt="logo" />
+              <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end space-x-3">
+              <img src="./assets/coin.png" alt="coin" />
+              <p class="text-xl text-[#111111] text-opacity-70">
+                <span id="total-account-balance" class="total">10500</span> BDT
+              </p>
+            </div>
           </div>
         </div>
-      </nav>
-
-      <!-- Secondary Nav -->
-      <div class="flex justify-center space-x-4 pt-8 bg-opacity-100">
+        <!-- Secondary Nav -->
+      <div class="flex justify-center bg-white space-x-4 py-8  bg-opacity-70 backdrop:blur-3xl">
         <button
           id="donation-fetcher"
           class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-1 border-gray-300 bg-[#B4F461]"
@@ -75,11 +75,14 @@
           History
         </button>
       </div>
-      <div class="divider"></div>
+      <hr>
+      </nav>
+
+      
     </header>
     <main class="lg:w-4/5 lg:mx-auto mt-12">
       <!-- Donation section start -->
-      <section id="donation-container" class="pb-12 space-y-8" >
+      <section id="donation-container" class="pb-12 space-y-8 " >
         <!-- Card-1 -->
         <div
           class="flex items-center justify-between p-8 border border-gray-200 rounded-2xl"
@@ -88,7 +91,7 @@
 
           <div class="lg:w-1/2 space-y-4">
             <div
-              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-36 border-none rounded-lg box-border"
+              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-40 border-none rounded-lg box-border"
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-opacity-70">
@@ -118,11 +121,6 @@
             >
               Donate Now
             </button>
-
-            <!-- Open the modal using ID.showModal() method -->
-            <!-- <button class="btn" onclick="my_modal_2.showModal()">
-              open modal
-            </button> -->
           </div>
         </div>
 
@@ -134,7 +132,7 @@
 
           <div class="lg:w-1/2 space-y-4">
             <div
-              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-36 border-none rounded-lg box-border"
+              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-40 border-none rounded-lg box-border"
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-opacity-70">
@@ -159,24 +157,9 @@
             >
               Donate Now
             </button>
-
-            <!-- Open the modal using ID.showModal() method -->
-            <!-- <button class="btn" onclick="my_modal_2.showModal()">
-              open modal
-            </button> -->
-            <!-- <dialog id="my_modal_2" class="modal modal-top">
-              <div class="modal-box">
-                <h3 class="text-lg font-bold">Congrats!</h3>
-                <img src="./assets/coin.png" alt="">
-                <p class="py-4 opacity-70">You Have Donate For Humankind</p>
-                <h5 class="text-2xl font-bold">Successfully</h5>
-              </div>
-              <form method="dialog" class="modal-backdrop">
-                <button>Close Confirmation</button>
-              </form>
-            </dialog> -->
           </div>
         </div>
+
         <!-- Card-3 -->
         <div
           class="flex items-center justify-between p-8 border border-gray-200 rounded-2xl"
@@ -185,7 +168,7 @@
 
           <div class="lg:w-1/2 space-y-4">
             <div
-              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-36 border-none rounded-lg box-border"
+              class="flex items-center space-x-2 px-4 py-[10px] bg-gray-100 w-40 border-none rounded-lg box-border"
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-opacity-70">
@@ -210,22 +193,6 @@
             >
               Donate Now
             </button>
-
-            <!-- Open the modal using ID.showModal() method -->
-            <!-- <button class="btn" onclick="my_modal_2.showModal()">
-              open modal
-            </button> -->
-            <!-- <dialog id="my_modal_2" class="modal modal-top">
-              <div class="modal-box">
-                <h3 class="text-lg font-bold">Congrats!</h3>
-                <img src="./assets/coin.png" alt="">
-                <p class="py-4 opacity-70">You Have Donate For Humankind</p>
-                <h5 class="text-2xl font-bold">Successfully</h5>
-              </div>
-              <form method="dialog" class="modal-backdrop">
-                <button>Close Confirmation</button>
-              </form>
-            </dialog> -->
           </div>
         </div>
 
@@ -245,11 +212,23 @@
       </section>
 
       <!-- History section start -->
-      <section id="history-container" class="hidden space-y-4"></section>
+      <section id="history-container" class="hidden space-y-4">
+
+      </section>
     </main>
     <!-- Footer section start -->
-    <footer></footer>
+    <footer class="bg-[#F9F7F3]">
+      <section class="lg:w-4/5 lg:mx-auto my-10">
+        <div>
 
+        </div>
+        <div>
+          
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/routing.js"></script>
     <script src="./js/utlities.js"></script>
     <script src="./js/utilitiesFetcher.js"></script>
     <script src="./js/donateNoakhali.js"></script>
